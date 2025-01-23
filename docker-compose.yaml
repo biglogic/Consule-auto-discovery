@@ -10,8 +10,9 @@ services:
       - "8301:8301/udp"
       - "8302:8302/tcp"
       - "8302:8302/udp"
-    command: agent -dev -ui -client=0.0.0.0
+    command: agent -server -ui -bootstrap-expected=1 -client=0.0.0.0 
     environment:
       - CONSUL_BIND_INTERFACE=eth0
     volumes:
-        - ./consul-data:/consul/data
+
+        - ./consul-config:/consul/config

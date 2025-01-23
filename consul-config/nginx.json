@@ -1,0 +1,12 @@
+{
+    "service": {
+      "name": "nginx",
+      "port": 80,
+      "address": "192.168.5.142",
+      "check": {
+        "http": "http://nginx:80",
+        "interval": "10s",
+        "timeout": "2s"
+      }
+    }
+}
