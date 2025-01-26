@@ -14,5 +14,4 @@ services:
     environment:
       - CONSUL_BIND_INTERFACE=eth0
     volumes:
-
-        - ./consul-config:/consul/config
+      - ./consul-config:/consul/config
